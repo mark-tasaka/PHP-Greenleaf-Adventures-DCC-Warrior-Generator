@@ -3,6 +3,13 @@ The Greenleaf Adventures Warrior Character Generator is the fourth iteration of 
 
 ----------------------
 
+
+Update 1.01: 2021-09-04
+
+Deleted file randomName.php.  Added files: nameSelect.php, gender.php, givenNamesFemale.php, givenNamesMale.php and surnames.php.  Updated files: dccWarrior.php and warrior.css.
+
+
+
 Initial Commit: 2021-09-03
 
 The initial commit of the Greenleaf Adventures Dungeon Crawl Classics Warrior Character Generator.
