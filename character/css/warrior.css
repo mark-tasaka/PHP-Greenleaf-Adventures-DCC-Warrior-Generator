@@ -18,15 +18,24 @@ body{
 }
 
 
-/*DCC Thief Generator Version 3 post data css*/
+/*DCC Warrior Generator Version 4 post data css*/
 
 #characterName{
     position:absolute;
     top: 115px;
     left: 45px;
 	font-size: 0.85em;
-    width:200 px;
+    width:200px;
 }
+
+#characterName2{
+    position:absolute;
+    top: 115px;
+    left: 45px;
+	font-size: 0.85em;
+    width:200px;
+}
+
 
 #gender{
     position:absolute;
@@ -173,7 +182,7 @@ body{
 
 #abilityScoreGeneration{
     position:absolute;
-    top: 1160px;
+    top: 1150px;
     left: 670px;
     font-size: 0.5em;
     width: 240px;

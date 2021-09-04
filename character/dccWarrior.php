@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>DCC Empire of the East Warrior Character Generator </title>
+<title>Greenleaf Adventures DCC Warrior Character Generator </title>
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
@@ -30,12 +30,14 @@
     include 'php/gear.php';
     include 'php/classDetails.php';
     include 'php/abilityScoreGen.php';
-    include 'php/randomName.php';
+    //include 'php/randomName.php';
     include 'php/xp.php';
     include 'php/diceRoll.php';
     include 'php/luckySign.php';
     include 'php/zeroLvOccupation.php';
     include 'php/wealth.php';
+    include 'php/nameSelect.php';
+    include 'php/gender.php';
     
 
         if(isset($_POST["theCharacterName"]))
@@ -45,6 +47,58 @@
         }
 
         
+        if(isset($_POST["theGivenName"]))
+        {
+            $givenName = $_POST["theGivenName"];
+
+        }
+
+        if($givenName == '100')
+        {
+            $givenName = rand(0, 49);
+        }
+        else
+        {
+            $givenName = $givenName;
+        }
+        
+
+
+        if(isset($_POST["theSurname"]))
+        {
+            $surname = $_POST["theSurname"];
+
+        }
+
+        if($surname == '100')
+        {
+            $surname = rand(0, 37);
+        }
+        else
+        {
+            $surname = $surname;
+        }
+
+
+
+        if(isset($_POST['theCheckBoxCustomName']) && $_POST['theCheckBoxCustomName'] == 1) 
+        {
+            $givenName = 200;
+            $surname = 200;
+            
+        } 
+        
+        if(isset($_POST["theGender"]))
+        {
+            $gender = $_POST["theGender"];
+        }
+
+        $genderName = getGenderName($gender);
+        $genderNameIdentifier = genderNameGeneration ($gender);
+
+        $fullName = getName($givenName, $surname, $genderNameIdentifier);
+
+        
         if(isset($_POST["thePlayerName"]))
         {
             $playerName = $_POST["thePlayerName"];
@@ -52,16 +106,7 @@
         }
         
         
-        if(isset($_POST["theGender"]))
-        {
-            $gender = $_POST["theGender"];
-        }
 
-
-        if(isset($_POST['theCheckBoxRandomName']) && $_POST['theCheckBoxRandomName'] == 1) 
-        {
-            $characterName = getRandomName($gender) . " " . getSurname();
-        } 
 
         if(isset($_POST["theAlignment"]))
         {
@@ -118,7 +163,8 @@
         $luckMod = getAbilityModifier($luck);
 
 
-    $generationMessage = generationMesssage ($abilityScoreGen);
+        $nameGenMessage = getNameDescript($givenName, $surname);
+        $generationMessage = generationMesssage ($abilityScoreGen);
     
     
         if(isset($_POST["theArmour"]))
@@ -464,7 +510,7 @@
        
        <span id="gender">
            <?php
-           echo $gender;
+           echo $genderName;
            ?>
        </span>
        
@@ -534,6 +580,13 @@
        <span id="characterName">
            <?php
                 echo $characterName;
+           ?>
+        </span>
+
+             
+       <span id="characterName2">
+           <?php
+                echo $fullName;
            ?>
         </span>
 
@@ -754,7 +807,7 @@
 
        <span id="abilityScoreGeneration">
             <?php
-           echo $generationMessage;
+           echo $nameGenMessage . '<br/>' . $generationMessage;
            ?>
        </span>
 
