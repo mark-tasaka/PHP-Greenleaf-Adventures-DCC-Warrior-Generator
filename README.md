@@ -4,6 +4,12 @@ The Greenleaf Adventures Warrior Character Generator is the fourth iteration of 
 ----------------------
 
 
+Update 1.02: 2021-09-05
+
+Updates to dccWarrior and warrior.css.  A new version of the character sheet added.
+
+
+
 Update 1.01: 2021-09-04
 
 Deleted file randomName.php.  Added files: nameSelect.php, gender.php, givenNamesFemale.php, givenNamesMale.php and surnames.php.  Updated files: dccWarrior.php and warrior.css.
