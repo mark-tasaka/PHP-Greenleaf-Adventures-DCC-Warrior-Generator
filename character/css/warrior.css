@@ -22,7 +22,7 @@ body{
 
 #characterName{
     position:absolute;
-    top: 115px;
+    top: 100px;
     left: 45px;
 	font-size: 0.85em;
     width:200px;
@@ -30,7 +30,7 @@ body{
 
 #characterName2{
     position:absolute;
-    top: 115px;
+    top: 100px;
     left: 45px;
 	font-size: 0.85em;
     width:200px;
@@ -39,32 +39,57 @@ body{
 
 #gender{
     position:absolute;
-    top: 115px;
-    left: 273px;
+    top: 100px;
+    left: 292px;
 	font-size: 0.85em;
 }
 
 
 #alignment{
     position:absolute;
-    top: 115px;
-    left: 585px;
+    top: 100px;
+    left: 367px;
+	font-size: 0.85em;
+}
+
+
+#level{
+    position:absolute;
+    top: 163px;
+    left: 48px;
+	font-size: 0.85em;
+}
+
+
+
+#class{
+    position:absolute;
+    top: 163px;
+    left: 105px;
 	font-size: 0.85em;
 }
 
 
 #title{
     position:absolute;
-    top: 176px;
-    left: 225px;
+    top: 163px;
+    left: 240px;
+	font-size: 0.85em;
+}
+
+
+#profession{
+    position:absolute;
+    top: 163px;
+    left: 425px;
 	font-size: 0.85em;
 }
 
 
 #playerName{
     position:absolute;
-    top: 176px;
-    left: 475px;
+    top: 100px;
+    left: 468px;
 	font-size: 0.85em;
 }
 
@@ -224,14 +249,6 @@ body{
 
 
 
-#level{
-    position:absolute;
-    top: 176px;
-    left: 50px;
-	font-size: 0.85em;
-}
-
-
 
 #strength{
     position:absolute;
@@ -325,28 +342,13 @@ body{
 }
 
 
-#class{
-    position:absolute;
-    top: 176px;
-    left: 95px;
-	font-size: 0.85em;
-}
-
-
 #speed{
     position:absolute;
     top: 435px;
-    left: 835px;
-	font-size: 1.2em;
+    left: 845px;
+	font-size: 1.4em;
 }
 
-
-#profession{
-    position:absolute;
-    top: 115px;
-    left: 345px;
-	font-size: 0.85em;
-}
 
 #xpNextLevel{
     position:absolute;
@@ -410,63 +412,66 @@ body{
 
 #reflex{
     position:absolute;
-    top: 345px;
-    left: 755px;
-	font-size: 1.4em;
+    top: 330px;
+    left: 750px;
+	font-size: 1.6em;
 }
 
 #fort{
     position:absolute;
-    top: 430px;
-    left: 755px;
-	font-size: 1.4em;
+    top: 330px;
+    left: 840px;
+	font-size: 1.6em;
+    color: white;
 }
 
 #will{
     position:absolute;
-    top: 345px;
-    left: 830px;
-	font-size: 1.4em;
+    top: 430px;
+    left: 750px;
+	font-size: 1.6em;
+    color: white;
 }
 
 #criticalDieTable{
     position:absolute;
-    top: 243px;
-    left: 205px;
+    top: 227px;
+    left: 255px;
     font-size: 0.85em;
 }
 
+/*
 #deedDie{
     position:absolute;
     top: 370px;
-    left: 470px;
+    left: 270px;
     font-size: 0.9em;
 }
-
+*/
 #initiative{
     position:absolute;
-    top: 243px;
-    left: 337px;
+    top: 227px;
+    left: 380px;
     font-size: 0.9em;
 }
 
 #threatRange{
     position:absolute;
-    top: 243px;
-    left: 570px;
+    top: 227px;
+    left: 580px;
     font-size: 0.9em;
 }
 
 #attackBonus{
     position:absolute;
-    top: 243px;
-    left: 415px;
+    top: 227px;
+    left: 440px;
     font-size: 0.9em;
 }
 
 #actionDice{
     position:absolute;
-    top: 243px;
+    top: 227px;
     left: 50px;
     font-size: 0.85em;
 }

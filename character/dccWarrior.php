@@ -30,7 +30,6 @@
     include 'php/gear.php';
     include 'php/classDetails.php';
     include 'php/abilityScoreGen.php';
-    //include 'php/randomName.php';
     include 'php/xp.php';
     include 'php/diceRoll.php';
     include 'php/luckySign.php';
