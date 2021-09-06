@@ -3,6 +3,18 @@ The Greenleaf Adventures Warrior Character Generator is the fourth iteration of 
 
 ----------------------
 
+Live version of the Greenleaf Adventures Warrior Character Generator (version 4) is available at:
+
+https://www.tasaka-games.com/greenleaf/more/classes/warrior/
+
+---------------------------
+
+
+Update 1.03: 2021-09-06
+
+The completed version of the DCC Warrior Character Generator version 4 uploaded.  Updates to dccWarrior, warrior.css, languages.php, luckySign.php and zeroLvOccupation.php.  A link to the 'live version' of the generator added.
+
+
 
 Update 1.02: 2021-09-05
 
