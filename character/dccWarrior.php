@@ -37,6 +37,7 @@
     include 'php/wealth.php';
     include 'php/nameSelect.php';
     include 'php/gender.php';
+    include 'php/languages.php';
     
 
         if(isset($_POST["theCharacterName"]))
@@ -239,7 +240,6 @@
        $initiative = getInit($agilityMod, $luckMod, $luckySign[0]);
        $initiative += $level; 
 
-       $languages = getLanguages($intelligenceMod, $luckMod, $luckySign[0]);
 
        //Hit Points
        $hitPoints = getHitPoints($level, $staminaMod);
@@ -273,29 +273,30 @@
         $missileToDamage = $missileDamageLuckyBonus;
 
        
-       $professionNum = getOccupationNumber(); 
         
        $occupationArray = array();
        
-       $occupationArray = getOccupationArray($professionNum);
+       $occupationArray = getOccupation();
        
        $profession = $occupationArray[0];
 
+       $species = $occupationArray[1];
 
-       $trainedWeapon = $occupationArray[1];
+       $languages = array();
+
+       $languages = getLanguages($intelligenceMod, $luckMod, $luckySign[0], $species, $alignment, $intelligence);
+
+
+       $trainedWeapon = $occupationArray[2];
 
        //tradegoods array
 
-       $tradegoods = array();
+       $tradegoods = $occupationArray[4];
 
-       array_push($tradegoods, $occupationArray[3]);
+       //$tradegoods = array();
 
-       if($occupationArray[4] != '')
-       {
-            array_push($tradegoods, ', ');
-            array_push($tradegoods, $occupationArray[4]);
+       //array_push($tradegoods, $occupationArray[4]);
 
-       }
 
        
        if(isset($_POST["theLuckyWeapon"]))
@@ -538,18 +539,36 @@
 
        <span id="languages">
            <?php
-           echo $languages;
+
+           $arraySize = count($languages);
+
+           foreach($languages as $lan)
+           {
+               echo $lan;
+
+               --$arraySize;
+
+               if($arraySize > 1)
+               {
+                   echo ', ';
+               }
+               else if($arraySize === 1)
+               {
+                   echo ' & ';
+               }
+               else
+               {
+                    echo '';
+               }
+
+           }
            ?>
        </span>
        
        <span id="trainedWeapon">
            <?php
-           echo $trainedWeapon . ' / ';
+           echo $trainedWeapon . ' / ' . $tradegoods;
 
-           foreach($tradegoods as $td)
-           {
-               echo $td;
-           }
            ?></span>
 
 

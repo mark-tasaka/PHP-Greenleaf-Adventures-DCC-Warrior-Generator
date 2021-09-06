@@ -2,299 +2,96 @@
 //Zero Levo Occupation
 
 
-function getOccupation($input)
+function getOccupation()
 {
-        $a00 = array("Baker", "Rolling pin (as club)", "d4", "Bag of flour", "2 loaves of bread");
-        $a01 = array("Barber", "Shears (as dagger)", "d4", "Dental pelican", "linen sheet");
-        $a02 = array("Beggar", "Sling", "d4", "False eye-patch", "18 copper pieces");
-        $a03 = array("Blacksmith", "Hammer (as club)", "d4", "Steel tongs", "");
-        $a04 = array("Brewer", "Wooden ladle (as club)", "d4", "Wicked ale (gal)", "");
-        $a05 = array("Butcher", "Cleaver (as axe)", "d6", "Side of meat", "");
-        $a06 = array("Carpenter", "Handsaw (as dagger)", "d4", "3 planks of wood", "20 nails");
-        $a07 = array("Cartwright", "Wheel spoke (as club)", "d4", "Hand-drawn cart", "");
-        $a08 = array("Chandler", "Candle holder (as club)", "d4", "Small iron melting pot", "10 candles");
-        $a09 = array("Cordwainer", "Hole punch (as dagger)", "d4", "4’ of rolled leather", "extra pair of boots");
-        $a10 = array("Cooper", "Barrel stave (as club)", "d4", "1 empty oak barrel", "");
-        //12-23 Dispossessed
-        $a11 = array("Dispossessed peasant", "Pointy stick (as dagger)", "d4", "The clothes on your back", "");
-        $a12 = array("Draper", "Scissors (as dagger)", "d4", "1 bolt of velvet cloth", "");
-        $a13 = array("Falconer", "Sling", "d4", "Hunting bird-beast", "padded glove");
-        //26-47 Farmer
-        $a14 = array("Farmer", "Hoe (as club)", "d4", "Small bird-beast", "");
-        $a15 = array("Fishmonger", "Spiny fish (as 1d4 flail)", "d4", "6 fish", "large net");
-        $a16 = array("Furrier", "Skinning knife (as dagger)", "d4", "1 large beast pelt", "");
-        $a17 = array("Goldsmith", "Cudgel", "d4", "1 oz. gold dust", "scales");
-        $a18 = array("Grifter", "Stiletto (as dagger)", "d4", "3 cups and a ball", "loaded dice");
-        $a19 = array("Grocer", "Broom (as club)", "d4", "Leather apron", "large sack");
-        $a20 = array("Groomsman", "Riding crop (as 1d4 flail)", "d4", "Small riding-beast", "saddle, bridle");
-        $a21 = array("Hayward", "Fence post (as club)", "d4", "Map of local area", "lodestone");
-        $a22 = array("Hunter", "Hunting knife (as dagger)", "d4", "Small animal trap", "sling");
-        //56-60 Indentured servant
-        $a23 = array("Indentured servant", "Shiv (as dagger)", "d4", "Stolen silver earrings", "a bag of food");
-        $a24 = array("Locksmith", "Club", "d4", "Ring of skeleton keys", "");
-        //62-72 Merchant
-        $a25 = array("Merchant", "Dagger", "d4", "Ball of twine", "small sack, tin of snuff");
-        $a26 = array("Miller", "Club", "d4", "", "Meal (1 lb)");
-        $a27 = array("Minstrel", "Dagger", "d4", "Mandolin", "locket with a small picture");
-        //75-86 Plowman
-        $a28 = array("Plowman", "Kitchen knife (as dagger)", "d4", "Bandana", "small sack");
-        $a29 = array("Reeve", "Short sword", "d6", "Official papers", "tin badge");
-        $a30 = array("Scribe", "Quill (as dart)", "d4", "Inkpot", "sheaf of papers, small ledger");
-        $a31 = array("Silversmith", "Cudgel", "d4", "Silver ring", "");
-        $a32 = array("Stonemason", "Mallet (as club)", "d4", "Iron chisel", "");
-        $a33 = array("Tailor", "Fine scissors (as dagger)", "d4", "Measuring tape", "20 pins");
-        $a34 = array("Tinker", "Tinker’s dam (as dagger)", "d4", "Tinker tools", "4 tin patches");
-        $a35 = array("Trapper", "Hunting knife (as dagger)", "d4", "Small animal trap", "20’ rope");
-        $a36 = array("Traveling salesman", "Short sword", "d6", "Pack", "assorted worthless gewgaws");
-        //95-98 Vagrant
-        $a37 = array("Vagrant", "Shiv (as dagger)", "d4", "Flask (grain alcohol)", "one shoe");
-        $a38 = array("Weaver", "Bobbin (as dagger)", "d4", "Bushel basket", "straw hat");
-        $a39 = array("Woodcutter", "Axe", "d6", "Bundle of wood", "");
+	        
+		$a31 = array("Alchemist", "Human", "Staff", "1d4", "Oil, 1 flask");
+		$a32 = array("Animal Trainer", "Human", "Club", "1d4", "Pony");
+		$a33 = array("Armourer", "Human", "Hammer (as Club)", "1d4", "Iron Helmet");
+		$a34 = array("Astrologer", "Human", "Dagger", "1d4", "Spyglass");
+		$a35 = array("Barber", "Human", "Razor (as Dagger)", "1d4", "Scissors (as Dagger)");
+		$a36 = array("Beadle", "Human", "Staff", "1d4", "Holy Symbol");
+		$a37 = array("Beekeeper", "Human", "Hammer (as club)", "1d4", "Jar of Honey");
+		$a38 = array("Blacksmith", "Human", "Hammer (as Club)", "1d4", "Steel Tongs");
+		$a39 = array("Butcher", "Human", "Cleaver (as axe)", "1d6", "Side of Beef");
+		$a40 = array("Caravan Guard", "Human", "Short Sword", "1d6", "Linen, 1 Yard");
+		// Humans 41 - 47 Cheesemaker to Ditchdigger
+		$a41 = array("Cheesemaker", "Human", "Cudgel (as Staff)", "1d4", "Stinky Cheese");
+		$a42 = array("Cobbler", "Human", "Awl (as Dagger)", "1d4", "Shoehorn");
+		$a43 = array("Confidence Artist", "Human", "Dagger", "1d4", "Quality Cloak");
+		$a44 = array("Cooper", "Human", "Crowbar (as Club)", "1d4", "Barrel");
+		$a45 = array("Costermonger", "Human", "Knife (as Dagger)", "1d4", "Fruit");
+		$a46 = array("Cutpurse", "Human", "Dagger", "1d4", "Small Chest");
+		$a47 = array("Ditchdigger", "Human", "Shovel (as Staff)", "1d4", "Fine Dirt, 1 lbs.");
+		//Humans 48 - 56 Farmer Potato to Onion
+		$a48 = array("Farmer Potato", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a49 = array("Farmer Wheat", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a50 = array("Farmer Turnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a51 = array("Farmer Corn", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a52 = array("Farmer Rice", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a53 = array("Farmer Parsnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a54 = array("Farmer Radish", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a55 = array("Farmer Rutabaga", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a56 = array("Farmer Turnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		// Humans 57 - 70: Fortune Teller to Jester
+		// 66 - Herder
+		$a57 = array("Fortune Teller", "Human", "Dagger", "1d4", "Tarot Deck");
+		$a58 = array("Gambler", "Human", "Club", "1d4", "Dice");
+		$a59 = array("Gong Farmer", "Human", "Trowel (as Dagger)", "1d4", "Sack of Night Soil");
+		$a60 = array("Ditcher", "Human", "Shovel (as Staff)", "1d4", "Trowel (as Dagger)");
+		$a61 = array("Grave Digger", "Human", "Shovel (as Staff)", "1d4", "Trowel (as Dagger)");
+		$a62 = array("Guild Beggar", "Human", "Sling", "1d4", "Crutches");
+		$a63 = array("Beggar", "Human", "Sling", "1d4", "Crutches");
+		$a64 = array("Healer", "Human", "Club", "1d4", "Holy Water, 1 Vial");
+		$a65 = array("Herbalist", "Human", "Sling", "1d4", "Herbs, 1 lbs.");
+		$a66 = array("Herder", "Human", "Staff", "1d4", "Herding Dog");
+		$a67 = array("Hunter", "Human", "Short Bow", "1d6", "Deer Pelt");
+		$a68 = array("Huntsman", "Human", "Short Bow", "1d6", "Deer Pelt");
+		$a69 = array("Indentured Servant", "Human", "Staff", "1d4", "Locket");
+		$a70 = array("Jester", "Human", "Dart", "1d4", "Silk Cloths");
+		// Humans 71 - 80: Jeweler to Rope Maker
+		$a71 = array("Jeweler", "Human", "Dagger", "1d4", "Gem worth 20 gp");
+		$a72 = array("Locksmith", "Human", "Dagger", "1d4", "Fine Tools");
+		$a73 = array("Mendicant", "Human", "Club", "1d4", "Cheese Dip");
+		$a74 = array("Locksmith", "Human", "Dagger", "1d4", "Fine Tools");
+		$a75 = array("Merchant", "Human", "Dagger", "1d4", "");
+		$a76 = array("Miller/Baker", "Human", "Club", "1d4", "Flour, 1 lbs.");
+		$a77 = array("Minstrel", "Human", "Dagger", "1d4", "Ukulele");
+		$a78 = array("Noble", "Human", "Longsword", "1d8", "Gold Ring worth 10 gp");
+		$a79 = array("Orphan", "Human", "Club", "1d4", "Rag Doll");
+		$a80 = array("Ostler", "Human", "Staff", "1d4", "Bridle");
+		$a81 = array("Rope Maker", "Human", "Knife (as Dagger)", "1d4", "Rope, 100'");
+		// 81 - 90: Scribe to Urchin
+		$a82 = array("Scribe", "Human", "Dart", "1d4", "Parchment, 10 sheets");
+		$a83 = array("Shaman", "Human", "Mace", "1d6", "Herbs, 1 lbs.");
+		$a84 = array("Slave", "Human", "Club", "1d4", "Strange-looking Rock");
+		$a85 = array("Smuggler", "Human", "Sling", "1d4", "Waterproof Sack");
+		$a86 = array("Squire", "Human", "Longsword", "1d8", "Steel Helmet");
+		$a87 = array("Herald", "Human", "Longsword", "1d8", "Steel Helmet");
+		$a88 = array("Tax Collector", "Human", "Longsword", "1d8", "");
+		$a89 = array("Trapper", "Human", "Sling", "1d4", "Badger Pelt");
+		$a90 = array("Molecatcher", "Human", "Sling", "1d4", "Mole Pelt");
+		$a91 = array("Urchin", "Human", "Stick (as Club)", "1d4", "Begging Bowl");
+		//92 - 96: Wainwright to Wood Seller
+		// Humans 92 -  Wainwright
+		$a92 = array("Wainwright", "Human", "Club", "1d4", "Push Cart (see notes)");
+		$a93 = array("Weaver", "Human", "Dagger", "1d4", "Fine Suit of Clothes");
+		$a94 = array("Wizard's Apprentice", "Human", "Dagger", "1d4", "Black Grimoire");
+		$a95 = array("Woodcutter", "Human", "Hand Axe", "1d6", "Bundle of Wood");
+		$a96 = array("Woodmonger", "Human", "Hand Axe", "1d6", "Bundle of Wood");
+		$a97 = array("Wood Seller", "Human", "Hand Axe", "1d6", "Bundle of Wood");
+		// Humans 97 - 99: Mercenary to 
+		$a98 = array("Mercenary", "Human", "Longsword", "1d8", "");
+		$a99 = array("Outlaw", "Human", "Short Sword", "1d6", "");
+		$a100 = array("Soldier", "Human", "Spear", "1d8", "");
+	
 
-        $array1= array($a00, $a01, $a02, $a03, $a04, $a05, $a06, $a07, $a08, $a09, $a10, $a11, $a12, $a13, $a14, $a15, $a16, $a17, $a18, $a19, $a20, $a21, $a22, $a23, $a24, $a25, $a26, $a27, $a28, $a29, $a30, $a31, $a32, $a33, $a34, $a35, $a36, $a37, $a38, $a39);
+        $array1 = array($a31, $a32, $a33, $a34, $a35, $a36, $a37, $a38, $a39, $a40, $a41, $a42, $a43, $a44, $a45, $a46, $a47, $a48, $a49, $a50, $a51, $a52, $a53, $a54, $a55, $a56, $a57, $a58, $a59, $a60, $a61, $a62, $a63, $a64, $a65, $a66, $a67, $a68, $a69, $a70, $a71, $a72, $a73, $a74, $a75, $a76, $a77, $a78, $a79, $a80, $a81, $a82, $a83, $a84, $a85, $a86, $a87, $a88, $a89, $a90, $a91, $a92, $a93, $a94, $a95, $a96, $a97, $a98, $a99, $a100);
+
+        shuffle($array1);
         
-        return $array1[$input];
+        return $array1[0];
         
-}
-
-function getOccupationNumber ()
-{
-        $number = rand(0, 99);
-        return $number;
-}
-
-function getOccupationArray($input)
-{
-        $occupationArray = array();
-        $occupationNum = 0;
-
-        if($input == 0)
-        {
-                $occupationNum = 0;
-        }
-
-        if($input == 1)
-        {
-                $occupationNum = 1;
-        }
-
-        if($input == 2)
-        {
-                $occupationNum = 2;
-        }
-
-        if($input == 3)
-        {
-                $occupationNum = 3;
-        }
-
-        if($input == 4)
-        {
-                $occupationNum = 4;
-        }
-
-        if($input == 5)
-        {
-                $occupationNum = 5;
-        }
-        
-        if($input == 6)
-        {
-                $occupationNum = 6;
-        }
-
-        if($input == 7)
-        {
-                $occupationNum = 7;
-        }
-
-        if($input == 8)
-        {
-                $occupationNum = 8;
-        }
-
-        if($input == 9)
-        {
-                $occupationNum = 9;
-        }
-
-        if($input == 10)
-        {
-                $occupationNum = 10;
-        }
-
-        if($input >= 11 && $input <= 22)
-        {
-                $occupationNum = 11;
-        }
-
-        if($input == 23)
-        {
-                $occupationNum = 12;
-        }
-
-        if($input == 24)
-        {
-                $occupationNum = 13;
-        }
-
-        if($input >= 25 && $input <= 46)
-        {
-                $occupationNum = 14;
-        }
-
-        if($input == 47)
-        {
-                $occupationNum = 15;
-        }
-
-        if($input == 48)
-        {
-                $occupationNum = 16;
-        }
-
-        if($input == 49)
-        {
-                $occupationNum = 17;
-        }
-
-        if($input == 50)
-        {
-                $occupationNum = 18;
-        }
-
-        if($input == 51)
-        {
-                $occupationNum = 19;
-        }
-
-        if($input == 52)
-        {
-                $occupationNum = 20;
-        }
-
-        if($input == 53)
-        {
-                $occupationNum = 21;
-        }
-
-        if($input == 54)
-        {
-                $occupationNum = 22;
-        }
-
-        if($input >= 55 && $input <= 59)
-        {
-                $occupationNum = 23;
-        }
-
-        if($input == 60)
-        {
-                $occupationNum = 24;
-        }
-
-        if($input >= 61 && $input <= 71)
-        {
-                $occupationNum = 25;
-        }
-
-
-        if($input == 72)
-        {
-                $occupationNum = 26;
-        }
-
-        if($input == 73)
-        {
-                $occupationNum = 27;
-        }
-
-        if($input >= 74 && $input <= 85)
-        {
-                $occupationNum = 28;
-        }
-        
-        if($input == 86)
-        {
-                $occupationNum = 29;
-        }
-
-        if($input == 87)
-        {
-                $occupationNum = 30;
-        }
-        
-        if($input == 88)
-        {
-                $occupationNum = 31;
-        }
-
-        if($input == 89)
-        {
-                $occupationNum = 32;
-        }
-        
-        if($input == 90)
-        {
-                $occupationNum = 33;
-        }
-
-        if($input == 91)
-        {
-                $occupationNum = 34;
-        }
-        
-        if($input == 92)
-        {
-                $occupationNum = 35;
-        }
-
-        if($input == 93)
-        {
-                $occupationNum = 36;
-        }
-
-        if($input >= 94 && $input <= 97)
-        {
-                $occupationNum = 37;
-        }
-
-        if($input == 98)
-        {
-                $occupationNum = 38;
-        }
-
-        if($input == 99)
-        {
-                $occupationNum = 39;
-        }
-
-
-
-        $occupationArray = getOccupation($occupationNum);
-
-        return $occupationArray;
-
-}
-
-
-
-function getBird()
-{
-        $bird = array(" (wool-beast)", " (load-beast)", " (aquatic bird-beast)", " (small meat-beast)", " (load-beast)", " (small riding-beast)");
-
-        shuffle($bird);
-
-        return $bird[0];
-}
-
-function getCartContents()
-{
-        $contents = array(" (containing a hay bale)", " (containing a tobacco stick bundle)", " (containing 20 ears of corn)", " (containing 1 bushel of chicken eggs)", " (containing compost)", " (containing your aged mother)");
-
-        shuffle($contents);
-
-        return $contents[0];
 }
 
 

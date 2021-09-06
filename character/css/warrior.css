@@ -96,7 +96,7 @@ body{
 
 #armourName{
     position:absolute;
-    top: 900px;
+    top: 905px;
     left: 55px;
     font-size: 0.8em;
     width: 300px;
@@ -142,14 +142,14 @@ body{
 
 #weaponsList{
     position:absolute;
-    top: 1005px;
-    left: 55px;
+    top: 1010px;
+    left: 46px;
 	font-size: 0.65em;
 }
 
 #weaponsList2{
     position:absolute;
-    top: 1005px;
+    top: 1010px;
     left: 285px;
 	font-size: 0.65em;
 }
@@ -182,15 +182,15 @@ body{
 #weaponNotes{
     position:absolute;
     top: 1143px;
-    left: 610px;
+    left: 600px;
 	font-size: 0.4em;
 }
 
 
 #gearList{
     position:absolute;
-    top: 665px;
-    left: 680px;
+    top: 660px;
+    left: 670px;
     font-size: 0.6em;
     width: 230px;
 }
@@ -198,8 +198,8 @@ body{
 
 #wealth{
     position:absolute;
-    top: 960px;
-    left: 680px;
+    top: 867px;
+    left: 670px;
     font-size: 0.6em;
     width: 230px;
 }
@@ -207,8 +207,8 @@ body{
 
 #abilityScoreGeneration{
     position:absolute;
-    top: 1150px;
-    left: 670px;
+    top: 1130px;
+    left: 390px;
     font-size: 0.5em;
     width: 240px;
 }
@@ -219,7 +219,7 @@ body{
     position:absolute;
     top: 660px;
     left: 390px;
-	font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 
@@ -233,10 +233,10 @@ body{
 
 #trainedWeapon{
     position:absolute;
-    top: 725px;
+    top: 755px;
     left: 60px;
 	font-size: 0.8em;
-    width: 280px;
+    width: 260px;
 }
 
 
@@ -252,31 +252,31 @@ body{
 
 #strength{
     position:absolute;
-    top: 314px;
-    left: 540px;
+    top: 310px;
+    left: 530px;
 	font-size: 1.5em;
 }
 
 
 #strengthMod{
     position:absolute;
-    top: 314px;
-    left: 610px;
+    top: 310px;
+    left: 600px;
 	font-size: 1.5em;
 }
 
 
 #agility{
     position:absolute;
-    top: 365px;
-    left: 540px;
+    top: 358px;
+    left: 530px;
 	font-size: 1.5em;
 }
 
 #agilityMod{
     position:absolute;
-    top: 365px;
-    left: 610px;
+    top: 358px;
+    left: 600px;
 	font-size: 1.5em;
 }
 
@@ -284,60 +284,60 @@ body{
 
 #stamina{
     position:absolute;
-    top: 416px;
-    left: 540px;
+    top: 407px;
+    left: 530px;
 	font-size: 1.5em;
 }
 
 #staminaMod{
     position:absolute;
-    top: 416px;
-    left: 610px;
+    top: 407px;
+    left: 600px;
 	font-size: 1.5em;
 }
 
 
 #personality{
     position:absolute;
-    top: 467px;
-    left: 540px;
+    top: 454px;
+    left: 530px;
 	font-size: 1.5em;
 }
 
 #personalityMod{
     position:absolute;
-    top: 467px;
-    left: 610px;
+    top: 454px;
+    left: 600px;
 	font-size: 1.5em;
 }
 
 
 #intelligence{
     position:absolute;
-    top: 518px;
-    left: 540px;
+    top: 499px;
+    left: 530px;
 	font-size: 1.5em;
 }
 
 #intelligenceMod{
     position:absolute;
-    top: 518px;
-    left: 610px;
+    top: 499px;
+    left: 600px;
 	font-size: 1.5em;
 }
 
 #luck{
     position:absolute;
-    top: 569px;
-    left: 540px;
+    top: 543px;
+    left: 530px;
 	font-size: 1.5em;
 }
 
 
 #luckMod{
     position:absolute;
-    top: 569px;
-    left: 610px;
+    top: 543px;
+    left: 600px;
 	font-size: 1.5em;
 }
 
@@ -360,53 +360,53 @@ body{
 
 #armourClass{
     position:absolute;
-    top: 295px;
-    left: 150px;
-	font-size: 1.2em;
+    top: 285px;
+    left: 110px;
+	font-size: 1.8em;
 }
 
 
 #armourClassBase{
     position:absolute;
-    top: 295px;
-    left: 205px;
-	font-size: 1em;
+    top: 285px;
+    left: 160px;
+	font-size: 1.8em;
 }
 
 
 
 #armourACBonus{
     position:absolute;
-    top: 952px;
+    top: 955px;
     left: 60px;
 	font-size: 0.9em;
 }
 
 #armourACCheckPen{
     position:absolute;
-    top: 952px;
-    left: 130px;
+    top: 955px;
+    left: 150px;
 	font-size: 0.9em;
 }
 
 #armourACSpeedPen{
     position:absolute;
-    top: 952px;
-    left: 225px;
+    top: 955px;
+    left: 238px;
 	font-size: 0.9em;
 }
 
 #fumbleDie{
     position:absolute;
-    top: 952px;
-    left: 295px;
+    top: 955px;
+    left: 305px;
 	font-size: 0.9em;
 }
 
 #hitPoints{
     position:absolute;
-    top: 413px;
-    left: 225px;
+    top: 385px;
+    left: 230px;
 	font-size: 1.1em;
 }
 
@@ -487,8 +487,8 @@ body{
 
 #languages{
     position:absolute;
-    top: 796px;
-    left: 60px;
+    top: 730px;
+    left:  390px;
     font-size: 0.8em;
     width: 240px;
 }
@@ -504,7 +504,7 @@ body{
 
 #range{
     position:absolute;
-    top: 540px;
+    top: 542px;
     left: 165px;
 	font-size: 1.2em;
 }
@@ -514,15 +514,15 @@ body{
 #meleeDamage{
     position:absolute;
     top: 500px;
-    left: 235px;
+    left: 240px;
 	font-size: 1.2em;
 }
 
 
 #rangeDamage{
     position:absolute;
-    top: 540px;
-    left: 235px;
+    top: 542px;
+    left: 240px;
 	font-size: 1.2em;
 }
 

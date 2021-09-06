@@ -195,35 +195,6 @@ function getWillLuckBonus($luckMod, $luckySign)
         return $bonus;
 }
 
-function getLanguages($intMod, $luckMod, $luckySign)
-{
-        $language = 'Common';
-        $bonusLanguages = 0;
-
-        if($intMod > 0)
-        {
-                $bonusLanguages += $intMod;
-        }
-
-        if($luckySign == 28 && $luckMod > 0)
-        {
-                $bonusLanguages += $luckMod;
-        }
-
-        if($bonusLanguages === 1)
-        {
-                return $language . ' & ' . $bonusLanguages . ' additional language';
-        }
-        else if($bonusLanguages > 1)
-        {
-                return $language . ' & ' . $bonusLanguages . ' additional languages';
-        }
-        else
-        {
-                return $language;
-        }
-
-}
 
 
 function meleeAttackLuckSign($luckMod, $luckySign)
