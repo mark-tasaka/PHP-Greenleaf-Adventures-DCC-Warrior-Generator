@@ -33,7 +33,7 @@ function getLanguages($intMod, $luckMod, $luckySign, $species, $alignment, $inte
         }
         else
         {
-            $languagesAvailable = array("Dwarf", "Elf", "Halfling", "Gnome", "Bugbear", "Goblin", "Gnoll", "Hobgolin", "Kobold", "Lizardman", "Minotaur", "Ogre", "Orc", "Troglodyte", "Giant");
+            $languagesAvailable = array( "Dwarf", "Elf", "Halfling", "Harpy", "Bugbear", "Goblin", "Gnoll", "Hobgolin", "Kobold", "Lizardman", "Minotaur", "Serpent-man", "Ogre", "Orc", "Troglodyte", "Giant");
 
         }
 
