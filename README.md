@@ -10,6 +10,11 @@ https://www.tasaka-games.com/greenleaf/more/classes/warrior/
 ---------------------------
 
 
+Update 1.04: 2021-09-12
+
+Correct minor bug in code.
+
+
 Update 1.03: 2021-09-06
 
 The completed version of the DCC Warrior Character Generator version 4 uploaded.  Updates to dccWarrior, warrior.css, languages.php, luckySign.php and zeroLvOccupation.php.  A link to the 'live version' of the generator added.
