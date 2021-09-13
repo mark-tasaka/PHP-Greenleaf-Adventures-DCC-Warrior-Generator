@@ -10,6 +10,11 @@ https://www.tasaka-games.com/greenleaf/more/classes/warrior/
 ---------------------------
 
 
+Update 1.05: 2021-09-13
+
+Added more functionality to the zero-level occupations.
+
+
 Update 1.04: 2021-09-12
 
 Correct minor bug in code.
