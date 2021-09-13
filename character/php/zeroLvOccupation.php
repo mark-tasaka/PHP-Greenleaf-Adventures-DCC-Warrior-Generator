@@ -24,15 +24,15 @@ function getOccupation()
 		$a46 = array("Cutpurse", "Human", "Dagger", "1d4", "Small Chest");
 		$a47 = array("Ditchdigger", "Human", "Shovel (as Staff)", "1d4", "Fine Dirt, 1 lbs.");
 		//Humans 48 - 56 Farmer Potato to Onion
-		$a48 = array("Farmer Potato", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a49 = array("Farmer Wheat", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a50 = array("Farmer Turnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a51 = array("Farmer Corn", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a52 = array("Farmer Rice", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a53 = array("Farmer Parsnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a54 = array("Farmer Radish", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a55 = array("Farmer Rutabaga", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
-		$a56 = array("Farmer Turnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock (see notes)");
+		$a48 = array("Farmer Potato", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a49 = array("Farmer Wheat", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a50 = array("Farmer Turnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a51 = array("Farmer Corn", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a52 = array("Farmer Rice", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a53 = array("Farmer Parsnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a54 = array("Farmer Radish", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a55 = array("Farmer Rutabaga", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
+		$a56 = array("Farmer Turnip", "Human", "Pitchfork (as Spear)", "1d8", "Livestock");
 		// Humans 57 - 70: Fortune Teller to Jester
 		// 66 - Herder
 		$a57 = array("Fortune Teller", "Human", "Dagger", "1d4", "Tarot Deck");
@@ -74,7 +74,7 @@ function getOccupation()
 		$a91 = array("Urchin", "Human", "Stick (as Club)", "1d4", "Begging Bowl");
 		//92 - 96: Wainwright to Wood Seller
 		// Humans 92 -  Wainwright
-		$a92 = array("Wainwright", "Human", "Club", "1d4", "Push Cart (see notes)");
+		$a92 = array("Wainwright", "Human", "Club", "1d4", "Push Cart");
 		$a93 = array("Weaver", "Human", "Dagger", "1d4", "Fine Suit of Clothes");
 		$a94 = array("Wizard's Apprentice", "Human", "Dagger", "1d4", "Black Grimoire");
 		$a95 = array("Woodcutter", "Human", "Hand Axe", "1d6", "Bundle of Wood");
@@ -92,6 +92,40 @@ function getOccupation()
         
         return $array1[0];
         
+}
+
+function tradeGoodsAddition($occupation, $weapon)
+{
+	if($weapon === "Pitchfork (as Spear)")
+	{
+		$animalArray = array(" (sheep)", " (goat)", " (cow)", " (duck)", " (goose)", " (mule)");
+		shuffle($animalArray);
+		return $animalArray[0];
+	}
+	else if($occupation === "Wainwright")
+	{
+		$cartArray = array(" containing tomatoes", " containing nothing", " containing straw", " containing your dead", " containing dirt", " containing rocks");
+		shuffle($cartArray);
+		return $cartArray[0];
+	}
+	else if($occupation === "Mercenary")
+	{
+		return "Hide Armour";
+	}
+	else if($occupation === "Outlaw")
+	{
+		return "Leather Armour";
+	}
+	else if($occupation === "Soldier")
+	{
+		return "Shield";
+	}
+	else
+	{
+		return "";
+	}
+
+
 }
 
 

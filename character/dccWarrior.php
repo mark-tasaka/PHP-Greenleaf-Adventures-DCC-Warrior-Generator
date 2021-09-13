@@ -289,14 +289,10 @@
 
        $trainedWeapon = $occupationArray[2];
 
-       //tradegoods array
 
        $tradegoods = $occupationArray[4];
 
-       //$tradegoods = array();
-
-       //array_push($tradegoods, $occupationArray[4]);
-
+       $tradeGoodsAddition = tradeGoodsAddition($profession, $trainedWeapon);
 
        
        if(isset($_POST["theLuckyWeapon"]))
@@ -567,7 +563,7 @@
        
        <span id="trainedWeapon">
            <?php
-           echo $trainedWeapon . ' / ' . $tradegoods;
+           echo $trainedWeapon . ' / ' . $tradegoods . $tradeGoodsAddition;
 
            ?></span>
 
