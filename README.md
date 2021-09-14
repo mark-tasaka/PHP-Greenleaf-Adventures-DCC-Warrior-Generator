@@ -10,6 +10,11 @@ https://www.tasaka-games.com/greenleaf/more/classes/warrior/
 ---------------------------
 
 
+Update 1.06: 2021-09-14
+
+Updated languages to add bonus for Lucky Sign Birdsong (extra languages).
+
+
 Update 1.05: 2021-09-13
 
 Added more functionality to the zero-level occupations.
