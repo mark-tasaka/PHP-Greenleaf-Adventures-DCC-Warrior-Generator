@@ -48,6 +48,12 @@ function getLanguages($intMod, $luckMod, $luckySign, $species, $alignment, $inte
         {
                 $bonusLanguages += $intMod;
         }
+        
+
+        if($luckySign == "28" && $luckMod > 0)
+        {
+            $bonusLanguages += $luckMod;
+        }
 
         for($i = 0; $i < $bonusLanguages; $i++)
         {

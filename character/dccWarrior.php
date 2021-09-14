@@ -202,9 +202,6 @@
 
        $speed = 30 - $armourSpeedPen;
 
-       $baseArmourClass = 10 + $agilityMod;
-
-       $armourClass = $baseArmourClass + $totalAcDefense;
 
        $criticalDie = criticalDie($level);
 
@@ -216,6 +213,11 @@
 
        $luckySign = array();
        $luckySign = getBirthAugur();
+
+       
+       $baseArmourClass = getAC($agilityMod, $luckMod, $luckySign[0]);
+
+       $armourClass = $baseArmourClass + $totalAcDefense;
 
        $ref = savingThrowReflex($level);
        $ref += $agilityMod;
